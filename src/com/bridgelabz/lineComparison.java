@@ -10,6 +10,7 @@ public class lineComparison {
         int a1, b1, a2, b2;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the co-ordinates of line  : x1,y1,x2,y2");
+        System.out.println("Enter the co-ordinates of line  : a1,b1,a2,b2");
         x1 = scanner.nextInt();
         y1 = scanner.nextInt();
         x2 = scanner.nextInt();
@@ -37,12 +38,3 @@ public class lineComparison {
         return lineLength;
     }
 
-    private static void compareTheLines(int lineOneLength, int lineSecondLength) {
-        if(Double.compare(lineOneLength,lineSecondLength)==0)
-            System.out.println("equals");
-        else if (Double.compare(lineOneLength,lineSecondLength)>0)
-            System.out.println("line 1 Greater then line 2");
-        else
-            System.out.println("line 1 lesser then line 2");
-    }
-}
