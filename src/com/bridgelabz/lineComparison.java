@@ -10,6 +10,7 @@ public class lineComparison {
         int a1, b1, a2, b2;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the co-ordinates of line  : x1,y1,x2,y2");
+        System.out.println("Enter the co-ordinates of line  : a1,b1,a2,b2");
         x1 = scanner.nextInt();
         y1 = scanner.nextInt();
         x2 = scanner.nextInt();
@@ -34,4 +35,5 @@ public class lineComparison {
         System.out.println("The length of line is: "+ lineLength);
         return lineLength;
     }
+
 }
