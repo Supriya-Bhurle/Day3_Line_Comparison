@@ -29,6 +29,8 @@ public class lineComparison {
             System.out.println("Two lines are not equals");
         }
 
+        compareTheLines(lineOneLength,lineSecondLength);
+
     }
     static int lineLenghtCal(int x1, int x2, int y1, int y2){
         int lineLength = (int) Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
@@ -36,4 +38,13 @@ public class lineComparison {
         return lineLength;
     }
 
-}
+    public static void compareTheLines( int lineOneLength, int lineSecondLength){
+
+        if(Double.compare(lineOneLength,lineSecondLength)==0)
+            System.out.println("equals");
+        else if (Double.compare(lineOneLength,lineSecondLength)>0)
+            System.out.println("line 1 Greater then line 2");
+        else
+            System.out.println("line 1 lesser then line 2");
+
+}}
